@@ -8,10 +8,10 @@ function countWords (string){
     for( let i = 0; i < string.length; i++){
 
         if(word == check_pal){
-            console.log('La stringa e palindroma')   
+            console.log('La stringa e palindroma') //CONTROLLO SE LA PAROLA INSERITA E' PALINDROMA
         }else {
             console.log('La stringa non e palindroma')  //SE LA PAROLA INSERITA NON E PALINDROMA
-            return'la stronga non e palindroma'  //ESCO DA LA FUNZIONE QUANDO RILEVATO IL FATTO
+            return'la stronga non e palindroma'  //ESCO DAlLA FUNZIONE QUANDO RILEVATO IL FATTO
         }
         
         
