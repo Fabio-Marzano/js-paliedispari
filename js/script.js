@@ -1,3 +1,5 @@
+//PALINDROMA//
+
 //CONSENTIAMO L'INSERIMENTO DELLA PAROLA DA PARTE DELL'UTENTE//
 let word = prompt('Inserisci la parola'); 
 //PRENDO LA PAROLA INSERITA DALL'UTENTE LA SUDDIVIDO E NE INVERTO L'ORDINE//
@@ -24,4 +26,10 @@ function countWords (string){
 
 let wordpal = countWords(word);
 
+//PARI E DISPARI//
 
+//ASSEGNO FUNZIONE CHE GENERA IL NUMERO RANDOM//
+function generateRandomNumber() {
+
+    return Math.floor(Math.random() * 5);
+}
