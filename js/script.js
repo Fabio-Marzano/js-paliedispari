@@ -31,5 +31,16 @@ let wordpal = countWords(word);
 //ASSEGNO FUNZIONE CHE GENERA IL NUMERO RANDOM//
 function generateRandomNumber() {
 
-    return Math.floor(Math.random() * 5);
+    return Math.floor(Math.random() * 5 + 1);
 }
+
+//ASSEGNO LA FUNZIONE PER VERIFICARE SE LA SOMMA E' PARI O DISPARI//
+function checkEvenOrOdd() {
+    //CONTROLLO SE LA SOMMA E' PARI O DISPARI. SE PARI RESTITUISCO STRINGA PARI, SE DISPARI RESTITUISCO STRINGA DISPARI//
+    if (sum % 2 === 0) {
+        return 'pari';
+    }
+
+    return 'dispari';
+}
+
