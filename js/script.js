@@ -52,7 +52,7 @@ let even_or_odd = prompt('Inserisci la parola "pari" o "dispari"');
 //ASSEGNO VARIABILE CON VALORE COMPRESO TRA 1 E 5//
 let number = parseInt(prompt('Inserisci un valore compreso tra 1 e 5'));
 
-
+//RICHIAMO LA FUNZIONE GENERATERANDOMNUMBER//
 let pc_number = generateRandomNumber();
 console.log(pc_number);
 //SOMMO I DUE NUMERI//
@@ -60,7 +60,7 @@ let sum = number + pc_number;
 console.log(sum);
 //ASSEGNO UNA VARIABILE CON IL VALORE RESTITUITO DALLA FUNZIONE//
 let result = checkEvenOrOdd(sum);
-
+// CONTROLLO SE RESULT E LA VARIABILE CONTENENTE PARI O DISPARI HANNO LO STESSO VALORE//
 if (even_or_odd.toLowerCase() === result) {
     console.log('Hai vinto!');
 }
