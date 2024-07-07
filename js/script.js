@@ -44,11 +44,28 @@ function checkEvenOrOdd() {
     return 'dispari';
 }
 
-    //DICHIARO LA VARIABILE CON IL PROMPT//
-    let even_or_odd = prompt('Inserisci la parola "pari" o "dispari"');
+//DICHIARO LA VARIABILE CON IL PROMPT//
+let even_or_odd = prompt('Inserisci la parola "pari" o "dispari"');
 
-    let number = prompt('Inserisci un valore compreso tra 1 e 5');
 
-    let pc_number = generateRandomNumber();
+while(even_or_odd != 'pari' && even_or_odd != 'dispari') {
+    even_or_odd = prompt('Inserisci un numero tra "pari" o "dispari"');
+}
+//ASSEGNO VARIABILE CON VALORE COMPRESO TRA 1 E 5//
+let number = parseInt(prompt('Inserisci un valore compreso tra 1 e 5'));
+console.log(pc_number);
 
-    let sum = number + pc_number;
+
+let pc_number = generateRandomNumber();
+//SOMMO I DUE NUMERI//
+let sum = number + pc_number;
+console.log(sum);
+//ASSEGNO UNA VARIABILE CON IL VALORE RESTITUITO DALLA FUNZIONE//
+let result = checkEvenOrOdd(sum);
+
+if (even_or_odd.toLoverCase() === result) {
+    console.log('Hai vinto!');
+}
+else {
+    console.log('Hai perso!');
+}
